@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PipeSpawner : MonoBehaviour
 {
-    public GameObject Pipe;
+    public GameObject PipePair;
     [SerializeField] private float _timer = 0f;
     private float _minY = -2f;
     private float _maxY = 2f;
@@ -10,10 +10,10 @@ public class PipeSpawner : MonoBehaviour
     private void Update()
     {
         _timer += Time.deltaTime;
-        if (_timer >= 4f)
+        if (_timer >= 2.5f)
         {
-            new Vector3 (transform.position.x, Random.Range(_minY, _maxY), transform.position.z);
-            Instantiate(Pipe, transform.position, Quaternion.identity);
+            Vector3 spawnPos = new Vector3 (transform.position.x, Random.Range(_minY, _maxY), transform.position.z);
+            Instantiate(PipePair, spawnPos, Quaternion.identity);
              
             _timer = 0;
         }
