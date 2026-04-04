@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PipeSpawner
   PipePair: {fileID: 5400498521808402110, guid: e6d2f9ffddc24be47b51e48f566fd51a, type: 3}
-  _timer: 0
+  _timer: 3
 --- !u!4 &440480357
 Transform:
   m_ObjectHideFlags: 0
@@ -449,6 +449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 528038366}
   - component: {fileID: 528038367}
+  - component: {fileID: 528038368}
   m_Layer: 0
   m_Name: BirdVisual
   m_TagString: Untagged
@@ -529,6 +530,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &528038368
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528038365}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5853bf77c8b34bb4da4df7617dbac5d0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,7 +774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5637557c7a87898498df2c4368bde5d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bird
-  jumpForce: 10
+  jumpForce: 12
   tiltSpeed: 5
   maxTiltUp: 30
   maxTiltDown: -90

@@ -15,7 +15,12 @@ public class Bird : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-    
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        rb.linearVelocity = Vector2.zero;
+    }
+
     public void OnJump()
     {
         rb.linearVelocity = new Vector2(0f, jumpForce);
