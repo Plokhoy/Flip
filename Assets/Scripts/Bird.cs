@@ -8,6 +8,7 @@ public class Bird : MonoBehaviour
     [SerializeField] private float tiltSpeed = 5f;
     [SerializeField] private float maxTiltUp = 30f;
     [SerializeField] private float maxTiltDown = -90f;
+    private bool _isDeath;
 
     private Rigidbody2D rb;
 
@@ -18,7 +19,9 @@ public class Bird : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        rb.linearVelocity = Vector2.zero;
+        _isDeath = true;
+       rb.linearVelocity = Vector2.zero;
+        
     }
 
     public void OnJump()
@@ -31,7 +34,7 @@ public class Bird : MonoBehaviour
     {
         if(rb.linearVelocity.y < 0)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0,0, maxTiltDown), tiltSpeed *  Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0,0, maxTiltDown), tiltSpeed * Time.deltaTime);
         }
     }
 }
