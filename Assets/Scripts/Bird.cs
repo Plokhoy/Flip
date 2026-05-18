@@ -1,6 +1,7 @@
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Bird : MonoBehaviour
 {
@@ -21,13 +22,22 @@ public class Bird : MonoBehaviour
     {
         _isDeath = true;
        rb.linearVelocity = Vector2.zero;
+
         
     }
 
     public void OnJump()
     {
-        rb.linearVelocity = new Vector2(0f, jumpForce);
-        transform.rotation = Quaternion.Euler(0, 0, maxTiltUp);
+
+        if (_isDeath)
+        {
+            return;
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0f, jumpForce);
+            transform.rotation = Quaternion.Euler(0, 0, maxTiltUp);
+        }
     }
 
     public void Update()
