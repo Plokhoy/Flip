@@ -1,0 +1,12 @@
+using UnityEngine;
+
+public class ScoreZone : MonoBehaviour
+{
+    int score = 0;
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        score++;
+        Debug.Log(score);
+
+    }
+}
