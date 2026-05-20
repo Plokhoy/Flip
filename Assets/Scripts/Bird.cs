@@ -1,4 +1,4 @@
-using UnityEditor.ShaderGraph.Internal;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -22,7 +22,8 @@ public class Bird : MonoBehaviour
     {
         _isDeath = true;
        rb.linearVelocity = Vector2.zero;
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
         
     }
 
