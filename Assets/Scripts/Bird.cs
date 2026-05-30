@@ -1,4 +1,5 @@
 
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -12,20 +13,43 @@ public class Bird : MonoBehaviour
     private bool _isDeath;
 
     private Rigidbody2D rb;
+    private Collider2D col;
+
+    private enum GameState
+    {
+        Start,
+        Playing,
+        Dead 
+    }
+    private GameState _gameState;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<Collider2D>();
+    }
+    private IEnumerator SimpleTimer()
+    {
+
+        Debug.Log("STOP");
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (_isDeath)
+        {
+            return;
+        }
         _isDeath = true;
-       rb.linearVelocity = Vector2.zero;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        
-        
+        col.enabled = false;
+
+        StartCoroutine(SimpleTimer());
     }
+
+
 
     public void OnJump()
     {
