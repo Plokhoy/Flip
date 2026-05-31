@@ -7,9 +7,18 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     int score = 0;
 
+    public enum GameState
+    {
+        Start,
+        Playing,
+        Dead
+    }
+    public GameState _gameState;
+
     private void Awake()
     {
         Instance = this;
+        _gameState = GameState.Start;
     }
 
     public void AddScore()

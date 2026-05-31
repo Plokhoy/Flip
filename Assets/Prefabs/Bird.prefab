@@ -123,7 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4744705425156769206}
   - component: {fileID: 5371139261322686105}
-  - component: {fileID: 6572047248432947139}
+  - component: {fileID: 5603472135259138793}
   - component: {fileID: 7172045954567060741}
   - component: {fileID: 1559775847410415982}
   m_Layer: 0
@@ -176,8 +176,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &6572047248432947139
-CircleCollider2D:
+--- !u!61 &5603472135259138793
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -210,8 +210,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.13291502, y: 0.21311581}
-  m_Radius: 0.76086164
+  m_Offset: {x: -0.1665501, y: 0.19304675}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.6510595, y: 1.3860933}
+  m_EdgeRadius: 0
 --- !u!114 &7172045954567060741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,6 +238,7 @@ MonoBehaviour:
   tiltSpeed: 5
   maxTiltUp: 30
   maxTiltDown: -90
+  _gameState: 0
 --- !u!114 &1559775847410415982
 MonoBehaviour:
   m_ObjectHideFlags: 0
