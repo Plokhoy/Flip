@@ -10,14 +10,22 @@ public class PipeSpawner : MonoBehaviour
     private void Update()
     {
         _timer += Time.deltaTime;
-        if (_timer >= 2.5f)
+        if (GameManager.Instance._gameState == GameManager.GameState.Dead)
         {
-            Vector3 spawnPos = new Vector3 (transform.position.x, Random.Range(_minY, _maxY), transform.position.z);
-            Instantiate(PipePair, spawnPos, Quaternion.identity);
-             
-            _timer = 0;
+            return;
         }
+        if (GameManager.Instance._gameState == GameManager.GameState.Playing)
+        {
 
-        
+            if (_timer >= 2.5f)
+            {
+                Vector3 spawnPos = new Vector3(transform.position.x, Random.Range(_minY, _maxY), transform.position.z);
+                Instantiate(PipePair, spawnPos, Quaternion.identity);
+
+                _timer = 0;
+
+            }
+        }
+  
     }
 }
