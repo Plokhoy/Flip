@@ -22,14 +22,14 @@ public class Bird : MonoBehaviour
         rb.gravityScale = 0;
         col = GetComponent<Collider2D>();
     }
-    private IEnumerator SimpleTimer()
-    {
+    //private IEnumerator SimpleTimer()
+    //{
 
-        Debug.Log("STOP");
-        yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    //    Debug.Log("STOP");
+    //    yield return new WaitForSeconds(3f);
+    //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
-    }
+    //}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -38,9 +38,8 @@ public class Bird : MonoBehaviour
             return;
         }
         GameManager.Instance._gameState = GameManager.GameState.Dead;
+        GameManager.Instance._gameOverPanel.SetActive(true);
         col.enabled = false;
-
-        StartCoroutine(SimpleTimer());
     }
 
 
@@ -57,6 +56,7 @@ public class Bird : MonoBehaviour
             GameManager.Instance._gameState = GameManager.GameState.Playing;
             rb.gravityScale = 3;
         }
+
         rb.linearVelocity = new Vector2(0f, jumpForce);
         transform.rotation = Quaternion.Euler(0, 0, maxTiltUp);
     }
