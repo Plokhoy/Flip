@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] public GameObject _gameOverPanel;
     int score = 0;
 
     public enum GameState
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         _gameState = GameState.Start;
+        _gameOverPanel.SetActive(false);
     }
 
     public void AddScore()
