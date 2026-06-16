@@ -31,6 +31,8 @@ public class Bird : MonoBehaviour
 
     //}
 
+    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (GameManager.Instance._gameState == GameManager.GameState.Dead)
@@ -68,5 +70,7 @@ public class Bird : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0,0, maxTiltDown), tiltSpeed * Time.deltaTime);
         }
     }
+
+    
 }
 
