@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1198,7 +1198,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1576265759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1045153213}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1576265759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1371,7 +1383,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Restart
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1459,6 +1471,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1061873131561737003, guid: 84f2ee38129256145824398e82dc45ac, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4672514779453497517, guid: 8b3ea4db7f40771409013bc6fbaea61b, type: 3}
+    - target: {fileID: 1061873131561737003, guid: 84f2ee38129256145824398e82dc45ac, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9793307
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061873131561737003, guid: 84f2ee38129256145824398e82dc45ac, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9793307
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061873131561737003, guid: 84f2ee38129256145824398e82dc45ac, type: 3}
+      propertyPath: m_Color.r
+      value: 0.98490566
+      objectReference: {fileID: 0}
     - target: {fileID: 3012531941107735894, guid: 84f2ee38129256145824398e82dc45ac, type: 3}
       propertyPath: m_Name
       value: Bird
@@ -1502,6 +1530,18 @@ PrefabInstance:
     - target: {fileID: 4744705425156769206, guid: 84f2ee38129256145824398e82dc45ac, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172045954567060741, guid: 84f2ee38129256145824398e82dc45ac, type: 3}
+      propertyPath: maxTiltUp
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172045954567060741, guid: 84f2ee38129256145824398e82dc45ac, type: 3}
+      propertyPath: tiltSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172045954567060741, guid: 84f2ee38129256145824398e82dc45ac, type: 3}
+      propertyPath: maxTiltDown
+      value: -33.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

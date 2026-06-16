@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
@@ -28,5 +29,10 @@ public class GameManager : MonoBehaviour
         score++;
         scoreText.text = score.ToString();
 
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
