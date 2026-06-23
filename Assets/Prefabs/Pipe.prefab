@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2871589969621469320}
   - component: {fileID: 1432117753450186176}
   - component: {fileID: 4189024188980490250}
+  - component: {fileID: -7265291444065320516}
   m_Layer: 0
   m_Name: Pipe
   m_TagString: Untagged
@@ -150,4 +151,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9980fe907ef92184aae3cb1a43ff9684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pipe
-  moveSpeed: 1
+  moveSpeed: 2.5
+--- !u!50 &-7265291444065320516
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5217942782479169233}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
