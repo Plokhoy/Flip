@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 4333651824250182737}
   - component: {fileID: 6007904500815259244}
   - component: {fileID: 306397206653158886}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ScoreSone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,11 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
+<<<<<<< Updated upstream
   m_Offset: {x: -0.029511452, y: 0.28778458}
+=======
+  m_Offset: {x: -0.5, y: 0.09}
+>>>>>>> Stashed changes
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -125,7 +129,11 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
+<<<<<<< Updated upstream
   m_Size: {x: 1, y: 4.5996494}
+=======
+  m_Size: {x: 0.08, y: 4.04}
+>>>>>>> Stashed changes
   m_EdgeRadius: 0
 --- !u!114 &306397206653158886
 MonoBehaviour:
@@ -150,6 +158,10 @@ PrefabInstance:
     - target: {fileID: 5217942782479169233, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_Name
       value: TopPipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 5217942782479169233, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -212,6 +224,10 @@ PrefabInstance:
     - target: {fileID: 5217942782479169233, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_Name
       value: 'BottomPipe '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5217942782479169233, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalPosition.x
