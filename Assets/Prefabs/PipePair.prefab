@@ -75,7 +75,7 @@ Transform:
   m_GameObject: {fileID: 8634248814565334105}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29, y: 0, z: 0}
+  m_LocalPosition: {x: 0.79, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -115,11 +115,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-<<<<<<< Updated upstream
-  m_Offset: {x: -0.029511452, y: 0.28778458}
-=======
   m_Offset: {x: -0.5, y: 0.09}
->>>>>>> Stashed changes
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -129,11 +125,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-<<<<<<< Updated upstream
-  m_Size: {x: 1, y: 4.5996494}
-=======
   m_Size: {x: 0.08, y: 4.04}
->>>>>>> Stashed changes
   m_EdgeRadius: 0
 --- !u!114 &306397206653158886
 MonoBehaviour:
@@ -155,6 +147,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6843620750016769235}
     m_Modifications:
+    - target: {fileID: 1432117753450186176, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
+      propertyPath: m_Size.y
+      value: 3.1844246
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432117753450186176, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0064376593
+      objectReference: {fileID: 0}
     - target: {fileID: 5217942782479169233, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_Name
       value: TopPipe
@@ -165,11 +165,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.26
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.92
+      value: 10.04
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -177,19 +177,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.0018409893
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.99999833
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -201,7 +201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -180.211
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -221,6 +221,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6843620750016769235}
     m_Modifications:
+    - target: {fileID: 1432117753450186176, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
+      propertyPath: m_Size.y
+      value: 3.164171
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432117753450186176, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.00368917
+      objectReference: {fileID: 0}
     - target: {fileID: 5217942782479169233, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_Name
       value: 'BottomPipe '
@@ -235,7 +243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.35
+      value: -9.43
       objectReference: {fileID: 0}
     - target: {fileID: 7571304949236896762, guid: 59eeb0f4c687a9744b64a5455878d2b6, type: 3}
       propertyPath: m_LocalPosition.z
